@@ -1,0 +1,17 @@
+3
+To make our system applicable on the SLURM we need to create a plugin. Therefore, 
+a component was designed to connect to the SLURM. It has the ability to collect statistics, 
+analyze them and based on the analysis create a model. Using this model, the prediction could be done. 
+Plugins may not only complement, but also modify the behavior of SLURM to optimize the system’s performance. 
+SLURM has a centralized SLURMctld manager for monitoring resources and tasks. Every compute server (node) 
+has a SLURMd daemon that could be compared with a remote shell: it waits for a job, runs that job, returns 
+state and waits for more work. In addition, SLURM has several utilities for its users. In this work we are 
+mainly interested in 2 utilities: srun - to start a job and sbatch - for placing jobs in the queue. More 
+precisely, sending a batchscript (instructions to SLURM to perform the job) to the SLURM.
+3.1 Review of existing solutions
+The standard SLURM package has a mechanism to predict only the starting time of a job. However, this 
+mechanism is very primitive and more often the time is overestimated. Moreover, there is a software system 
+for modeling the activity of computing cluster users based on the SLURM, which uses the collection of 
+statistics to simulate the load on a model of computing cluster under the control of SLURM. This software 
+lists several metrics used by the system administrators of clusters. This
+

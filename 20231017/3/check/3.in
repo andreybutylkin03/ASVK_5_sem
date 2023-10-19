@@ -1,0 +1,26 @@
+7
+approach has been tested on data from computing clusters of the Faculty of Computational Mathematics and 
+Cybernetics, Lomonosov Moscow State University and NIKIET JSC [13].
+However, this solution is also not suitable because it does not allow to analyze and prediction. There are 
+other systems [14] for analyzing the efficiency of using a cluster. Nevertheless, trying to connect such 
+systems to the SLURM wastes large amount of resources, while our proposed method only requires the 
+development of a component where analysis system can easily get embedded. In another work [15], various 
+metrics for clusters are studied, where the user will have to use these metrics manually to predict the run 
+time of the job which is not a ready-made solution.
+3.2 Statement of technical specifications
+The task is done through design, develop and test the functionality of the component (or components) 
+connected to the SLURM queuing system. The component collects statistical data and does analysis on the flow 
+of computational tasks. The component is a system of two modules implemented as:
+ Add-ons to SLURM to add and handle the --predict-time option in the srun and sbatch commands to predict the 
+job run time.
+ A Linux daemon that handles HTTP requests, trains the model, and etc. (hereinafter - the main application). 
+The application must be able to connect custom algorithms according to a given template.
+In addition, special scripts are required to install these modules easily.
+4. Conclusion and future work
+Our work has led us to conclude that adding new features to the dataset improves prediction accuracy. An 
+innovative solution for the resource allocation problem was found. The possibility of writing a plugin to 
+apply our machine learning system in practical applications was studied. It was found that designing a plugin 
+allows the practical use of machine learning algorithms in decision making. However, it is required to 
+improve the performance of this component. In future work, we will use this component to evaluate our 
+algorithms on a real cluster to find the best method to do prediction.
+

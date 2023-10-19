@@ -1,0 +1,9 @@
+6
+Empirical studies have repeatedly shown that in High-Performance Computing HPC users’ resource estimations lack accuracy.
+Therefore, resource underestimation may remove the job at any step of computing and subsequently allocated resources will be wasted. Moreover, resource overestimation also will waste 
+resources. In this work, to effectively utilize the overall HPC system, we proposed a new approach to predict the required resources such as; number of required CPUs, time slots etc. for newly submitted job. 
+The study focused on predictive analytics tasks including regression and classification. A supervised machine learning system, comprising several models, was trained based on 
+the collection of statistical data including per-job and per-user features collected from the reference queue systems. Results indicated that adding more features to the dataset improves the prediction accuracy. The possibility of designing a plugin to apply our machine learning system in practical applications was studied. A dynamically connected SLURM SPANK plugin was created that adds the “--predict-time”
+option and takes control on srun and sbatch commands while they are executed. It was found that the plugin enables practical use of our proposed machine learning system.
+Keywords: machine learning, predictive analytics, decision making, HPC, job scheduling, SLURM plugin.
+
