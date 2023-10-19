@@ -1,0 +1,6 @@
+:func x y max(exp(x),sin(y)**x)
+func 1 2
+func 12 1000
+func 1 pi/2
+func 0 pi/2
+quit "{};{}"

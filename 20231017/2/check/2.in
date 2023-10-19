@@ -1,0 +1,9 @@
+:foo xaf yaf zaf kaf xaf**sin(yaf)-cos(zaf)**kaf
+:fooo c sqrt(c)+abs(-c+1)
+fooo 12
+foo 1 2 3 4
+fooo 1
+:abb 1+200-exp(3)
+abb
+:zzz 1
+quit "{}, {}"
