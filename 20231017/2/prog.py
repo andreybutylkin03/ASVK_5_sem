@@ -22,5 +22,14 @@ while s := input():
         else:
             foo_n, *args = s.split()
             *sarg, evdef = foo[foo_n]
-            d = {f"{sarg[i]}" : eval(args[i]) for i in range(len(args))}
+            if len(sarg) == 1 and len(args) != 1:
+                args = []
+                args.append(s[(s.find('"') + 1): -(s[::-1].find('"') + 1)])
+            d = dict()
+            for i in range(len(args)):
+                try:
+                    d |= {f"{sarg[i]}" : eval(args[i])}
+                except:
+                    d |= {f"{sarg[i]}" : args[i]}
+   
             print(eval(evdef, globals() | d))
