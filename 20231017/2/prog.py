@@ -13,7 +13,7 @@ while s := input():
         foo[foo_n] = (*args, s_foo)
     else:
         ns += 1
-        if len(s) >= 4 and s[:4] == "quit":
+        if s.split()[0] == 'quit':
             nf += 1
             id1 = s.find('"')
             id2 = s[::-1].find('"')
