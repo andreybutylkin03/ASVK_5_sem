@@ -1,0 +1,1 @@
+print(*list(A().slide(range(125), 5)))
