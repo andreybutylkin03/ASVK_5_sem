@@ -1,1 +1,1 @@
-print(*list(A().slide("hdsfgfhshwieurghsjkhgshajdfhkasjdhfsjfhajkhfwhfiuqwgfqihfdjsalfhguiwrbvajskdfhureiowbvasjdlhfkajsdgfoibfaisdfbiqfksadjgfoirwgfasdhgfkhasgdfihgafyfgakshdgfhsadgfhjsadfjriorfghwuirgsfkjadbdjkhsadf".split('s'), 3)))
+print(*list(slide("hdsfgfhshwieurghsjkhgshajdfhkasjdhfsjfhajkhfwhfiuqwgfqihfdjsalfhguiwrbvajskdfhureiowbvasjdlhfkajsdgfoibfaisdfbiqfksadjgfoirwgfasdhgfkhasgdfihgafyfgakshdgfhsadgfhjsadfjriorfghwuirgsfkjadbdjkhsadf".split('s'), 3)))

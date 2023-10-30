@@ -1,0 +1,1 @@
+print(*list(itertools.takewhile(lambda x: x <= 17, slide(itertools.count(0), 1))))
