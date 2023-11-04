@@ -1,0 +1,9 @@
+a = Omnibus()
+for i in range(1000):
+    a.bugaga = i
+print(a.bugaga)
+del a.bugaga
+b = Omnibus()
+b.bugaga = 100
+print(b.bugaga)
+print(a.bugaga)

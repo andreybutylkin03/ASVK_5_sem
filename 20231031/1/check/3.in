@@ -1,0 +1,13 @@
+for i in range(1000):
+    a = Omnibus()
+    a.i = 100
+b = Omnibus()
+print(b.i)
+b.i = 100
+print(b.i)
+del b.i
+print(b.i)
+for i in range(1000):
+    a = Omnibus()
+    del a.i
+print(b.i)

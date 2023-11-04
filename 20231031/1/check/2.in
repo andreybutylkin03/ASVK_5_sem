@@ -1,0 +1,7 @@
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+print(a.i, b.j, c.k)
+a.i = b.i = c.j = 100
+print(a.i, b.j, c.k)
+del a.i
+print(a.i, b.j, c.k)
+del a.ll
