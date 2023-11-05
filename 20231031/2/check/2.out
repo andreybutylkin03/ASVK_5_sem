@@ -1,4 +1,4 @@
-r(True):5.25 s(True):7.0 t(True):1.875
-s < t=False, r < t=False, r < s=True
+r(True):6.0 s(True):6.0 t(True):2.0
+s < t=False, r < t=False, r < s=False
 s in t=False, r in t=False, t in s=True
 r & t=True, t & r=True, s & r=True

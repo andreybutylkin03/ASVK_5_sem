@@ -1,5 +1,5 @@
 r = Triangle((1, 1), (3, 4), (5, 2))
-s = Triangle((8, 2.5), (5.5, 4), (3.5, 2.5))
+s = Triangle((8, 2), (5, 4), (3, 2))
 print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip("rs", (r, s))))
 print(f"{r < s=}, {s < r=}")
 print(f"{s in r=}, {r in s=}")

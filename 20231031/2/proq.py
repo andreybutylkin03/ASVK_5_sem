@@ -63,6 +63,9 @@ class Triangle:
     def __and__(self, other):
         if not self or not other:
             return False
+
+        if self in other or other in self:
+            return True
         
         t = False
         for m0, m in combinations([self.a, self.b, self.c], 2):

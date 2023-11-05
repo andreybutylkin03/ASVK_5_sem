@@ -1,4 +1,4 @@
-r(True):5.0 s(True):3.375
-r < s=False, s < r=True
+r(True):5.0 s(True):5.0
+r < s=False, s < r=False
 s in r=False, r in s=False
 r & s=True
