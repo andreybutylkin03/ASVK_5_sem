@@ -55,7 +55,7 @@ class Triangle:
                 (other.b[0] - x)*(other.c[1] - y) - (other.c[0] - x)*(other.b[1] - y),
                 (other.c[0] - x)*(other.a[1] - y) - (other.a[0] - x)*(other.c[1] - y)
             ]
-            if not (all([i < 0 for i in k]) or all([i > 0 for i in k])):
+            if not (all([i <= 0 for i in k]) or all([i >= 0 for i in k])):
                 t = False
 
         return t
