@@ -1,0 +1,5 @@
+a = DivStr("shlasahaposhosseisosalasushkuamoglasosatmoiiaderniypotencial")
+print(* a % 11 // 3)
+print(a.upper() % 7)
+print(* a[-1::-1] // 13)
+print(a % 7 + DivStr() + a % 8)
