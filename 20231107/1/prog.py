@@ -1,13 +1,13 @@
 import collections
 
 class DivStr(collections.UserString):
-    def __init__(self, st='', step=0, kol=1):
+    def __init__(self, st='', step=1, kol=1):
         super().__init__(st)
         self.step = step
         self.st = st
         self.si = len(st)
         self.i = 0
-        self.kol = kol
+        self.kol = self.si
 
     def __floordiv__(self, num):
         self.kol = num
