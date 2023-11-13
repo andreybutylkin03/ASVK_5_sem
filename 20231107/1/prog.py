@@ -11,7 +11,7 @@ class DivStr(collections.UserString):
 
     def __floordiv__(self, num):
         self.kol = num
-        return DivStr(self.st, self.si // self.kol, self.kol)
+        return DivStr(self.st, self.si // self.kol)
 
     def __mod__(self, num):
         vr = divmod(self.si, num)
@@ -19,6 +19,7 @@ class DivStr(collections.UserString):
 
     def __iter__(self):
         self.i = 0
+        self.kol = 0 if self.step == 0 else self.si // self.step
         return self
 
     def __next__(self):
