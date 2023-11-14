@@ -1,0 +1,17 @@
+import random
+
+@objcount
+class C:
+    def __init__(self, a, p = 12):
+        self.a = a
+        self.p = p
+    def __del__(self):
+        print("Nooooooo.....", self.p)
+        self.a = None
+ma = [0 for i in range(100)]
+for i in range(100):
+    ma[i] = C(i)
+
+for i in range(100):
+    print(C.counter)
+    print(ma[random.randrange(100)].a)
