@@ -1,0 +1,10 @@
+class C:
+    num = Num()
+
+class D:
+    nenum = Num()
+c = C()
+d = D()
+c.num = "aboba"
+d.nenum = "bobaaba"
+print(c.num + d.nenum)

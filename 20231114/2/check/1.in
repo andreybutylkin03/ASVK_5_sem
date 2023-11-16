@@ -1,0 +1,9 @@
+class C:
+    num = Num()
+
+c = C()
+print(c.num)
+c.num = 12 + 56j
+print(c.num)
+d = C()
+del d

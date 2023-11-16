@@ -1,0 +1,8 @@
+class C:
+    num = Num()
+    nenum = Num()
+
+c = C()
+c.num = 12
+c.nenum = ['a', 1, "aboba"]
+print(c.num + c.nenum)
