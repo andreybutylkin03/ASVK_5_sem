@@ -4,5 +4,6 @@ class C:
 
 c = C()
 c.num = 12
+print(c.nenum)
 c.nenum = ['a', 1, "aboba"]
 print(c.num + c.nenum)
