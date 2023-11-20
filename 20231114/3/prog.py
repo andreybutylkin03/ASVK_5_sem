@@ -16,7 +16,7 @@ class Alpha:
         return ', '.join(ans)
 
 class AlphaQ:
-    s = set(string.ascii_lowercase)
+    __s = set(string.ascii_lowercase)
 
     def __init__(self, **kargs):
         for key, value in kargs.items():
@@ -30,7 +30,7 @@ class AlphaQ:
         return ', '.join(ans)
 
     def __setattr__(self, attr, val):
-        if attr in __class__.s:
+        if attr in __class__.__s:
             self.__dict__[attr] = val
         else:
             raise AttributeError
