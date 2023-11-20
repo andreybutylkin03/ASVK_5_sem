@@ -1,0 +1,27 @@
+from string import ascii_lowercase
+
+def alpha():
+    a = Alpha()
+    for i in range(10000):
+        str(a)
+    for i in range(10000):
+        for j in ascii_lowercase:
+            setattr(a, j, i)
+        str(a)
+    for i in range(10000):
+        str(a)
+
+def alphaq():
+    a = AlphaQ()
+    for i in range(10000):
+        str(a)
+    for i in range(10000):
+        for j in ascii_lowercase:
+            setattr(a, j, i)
+        str(a)
+    for i in range(10000):
+        str(a)
+
+from timeit import timeit
+
+print(timeit(stmt='alpha()', number=30, globals=globals()) < timeit(stmt='alphaq()', number=30, globals=globals()))

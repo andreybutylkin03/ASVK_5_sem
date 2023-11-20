@@ -1,0 +1,38 @@
+alp = Alpha(c=10, z=2, a=42)
+alq = AlphaQ(c=10, z=2, a=42)
+try:
+    alp.Q = 12
+except:
+    print("Poiman")
+else:
+    print("CHTO")
+try:
+    alp.j = 12
+except:
+    print("poiman")
+else:
+    print("chto")
+try:
+    alp.Tata
+except:
+    print("poiman")
+else:
+    print("chto")
+try:
+    alq.Q = 12
+except:
+    print("Poiman")
+else:
+    print("CHTO")
+try:
+    alq.j = 12
+except:
+    print("poiman")
+else:
+    print("chto")
+try:
+    alq.Tata
+except:
+    print("poiman")
+else:
+    print("chto")

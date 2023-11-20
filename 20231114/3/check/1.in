@@ -1,0 +1,6 @@
+alp = Alpha(c=10, z=2, a=42)
+alq = AlphaQ(c=10, z=2, a=42)
+alp.a = 13
+alq.q = 3
+print(alp)
+print(alq)
