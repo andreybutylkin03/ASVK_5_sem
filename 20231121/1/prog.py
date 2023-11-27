@@ -1,19 +1,18 @@
 import sys
 
 buf = sys.stdin.buffer.readline()
-i = 1
-ll = len(buf)
-cur_w = ll - 1
+if buf[-1] == 10:
+    buf = buf[:-1]
+i = 0
+L = len(buf) - 1
 sys.stdout.buffer.write(buf[:1])
 N = buf[0]
 b = []
 
 while True:
-    siz = int(i * cur_w / N)
-    b.append(buf[ll - cur_w:ll - cur_w + siz])
+    b.append(buf[1 + i * L // N:1 + (i + 1) * L // N])
     i += 1
-    cur_w -= siz
-    if cur_w <= 0:
+    if i * L / N >= L:
         break
 
 b.sort()
