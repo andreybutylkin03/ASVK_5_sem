@@ -1,0 +1,7 @@
+store 1 cur
+store 2 m
+store 32768 pre
+
+loo: mul cur m cur
+out cur
+ifgt pre cur loo

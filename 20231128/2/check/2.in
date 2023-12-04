@@ -1,0 +1,4 @@
+store 228 a
+out a
+ifeq a a loop
+loo:
