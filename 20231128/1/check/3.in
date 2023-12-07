@@ -7,4 +7,4 @@ class C(metaclass=dump):
 
 c = C(10)
 C(120)
-C.macm1(1, 2, 3, a = 1)
+c.macm1(1, 2, 3, a = 1)
