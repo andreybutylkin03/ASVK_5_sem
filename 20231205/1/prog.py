@@ -13,6 +13,7 @@ async def writer(q, delay, event):
 
 async def stacker(q, st, event):
     while True:
+        await asyncio.sleep(0)
         res = await q.get()
         await st.put(res)
         if event.is_set():
