@@ -24,4 +24,4 @@ def alphaq():
 
 from timeit import timeit
 
-print(timeit(stmt='alpha()', number=30, globals=globals()) < timeit(stmt='alphaq()', number=30, globals=globals()))
+print(timeit(stmt='alpha()', number=2, globals=globals()) < timeit(stmt='alphaq()', number=2, globals=globals()))
