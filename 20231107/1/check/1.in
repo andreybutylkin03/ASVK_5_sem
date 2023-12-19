@@ -1,4 +1,4 @@
-a = DivStr("shkfgewirgfksagfkahsgfyrgfklashdgfasdhgfyreufgsakhgf")
+a = DivStr("s")
 for i in range(len(a)):
     print(* a // (i + 1))
 for i in range(len(a)):
